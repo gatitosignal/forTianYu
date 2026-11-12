@@ -1,0 +1,21 @@
+{
+  "name": "dream-carousel-standalone",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.1"
+  },
+  "scripts": {
+    "photos": "node scripts/generate-photo-manifest.mjs",
+    "test": "node scripts/test-photo-slot-sequence.mjs",
+    "predev": "npm run photos",
+    "dev": "vite --host 127.0.0.1",
+    "prebuild": "npm run photos",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  }
+}
